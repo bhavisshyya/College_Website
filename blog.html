@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                        <!-- make website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;0,700;1,400;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>UNIVERSITY_WEB</title>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+  rel="stylesheet"  type='text/css'>
+</head>
+<body>
+    <section class="sub-header"> 
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="" srcset=""></a>
+            <div class="navlinks" id="navLINK">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="blog.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTENT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()" ></i>
+        </nav>
+        <h1>Our Certificate & Online program</h1>
+    </section>
+    <!-- ------- blog page content ------- -->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/certificate.jpg" alt="">
+                <h2>Our Certificate & Online program</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae veniam itaque rerum illo suscipit debitis eveniet, voluptate obcaecati maxime non cumque eligendi corporis neque ad tempore temporibus consectetur.<br> Dignissimos blanditiis, adipisci eum labore quam modi debitis dicta sequi sint dolore, ducimus voluptates quo culpa. Eum autem inventore corrupti. Accusantium totam consequuntur, laborum soluta hic quos tempore ea explicabo. Assumenda incidunt hic veniam nobis provident velit dolorum similique. Commodi voluptatibus fuga cum veniam deleniti placeat consequatur exercitationem rem, odio eligendi. Enim, ullam sapiente! Eligendi, expedita. Mollitia, nobis! Nulla ipsum totam reiciendis asperiores voluptates ipsa, nam facilis? Nisi saepe magnam enim nam.z</p>
+                <br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae veniam itaque rerum illo suscipit debitis eveniet, voluptate obcaecati maxime non cumque eligendi corporis neque ad tempore temporibus consectetur. Dignissimos blanditiis, adipisci eum labore quam modi debitis dicta sequi sint dolore, ducimus voluptates quo culpa. Eum autem inventore corrupti. Accusantium totam consequuntur, laborum soluta hic quos tempore ea explicabo. Assumenda incidunt hic veniam nobis provident velit dolorum similique. Commodi voluptatibus fuga cum veniam deleniti placeat consequatur exercitationem rem, odio eligendi. Enim, ullam sapiente! Eligendi, expedita. Mollitia, nobis! Nulla ipsum totam reiciendis asperiores voluptates ipsa, nam facilis? Nisi saepe magnam enim nam.z</p>
+                <br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae veniam itaque rerum illo suscipit debitis eveniet, voluptate obcaecati maxime non cumque eligendi corporis neque ad tempore temporibus consectetur. Dignissimos blanditiis, adipisci eum labore quam modi debitis dicta sequi sint dolore, ducimus voluptates quo culpa. Eum autem inventore corrupti. Accusantium totam consequuntur, laborum soluta hic quos tempore ea explicabo. Assumenda incidunt hic veniam nobis provident velit dolorum similique. Commodi voluptatibus fuga cum veniam deleniti placeat consequatur exercitationem rem, odio eligendi. Enim, ullam sapiente! Eligendi, expedita. Mollitia, nobis! Nulla ipsum totam reiciendis asperiores voluptates ipsa, nam facilis? Nisi saepe magnam enim nam.z</p>
+
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter your name">
+                        <input type="email" placeholder="Enter your email">
+                        <textarea rows="5" placeholder="Enter your comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">Post comment</button>
+                    </form>
+                </div>
+
+
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>22</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>24</span>
+                </div>
+                <div>
+                    <span>Block Chain</span>
+                    <span>13</span>
+                </div>
+                <div>
+                    <span>Artifical Intelligence</span>
+                    <span>5</span>
+                </div>
+                <div>
+                    <span>Journalism</span>
+                    <span>28</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ------- footer ------- -->
+     <section class="footer">
+         <h4>About Us</h4>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam obcaecati consequatur dicta beatae, amet provident doloribus quasi, <br> praesentium mollitia nam itaque cupiditate, non illo impedit id quis dolores laudantium minima?</p>
+         <div class="icons">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+         </div>
+         <p>made with <i class="fa fa-heart-o" aria-hidden="true"></i> by air tutorials.</p>
+     </section>
+    <!-- ------ java script ----- -->
+    <script>
+        var navLINK=document.getElementById("navLINK")
+        function showmenu(){
+            navLINK.style.right="0";
+        }
+        function hidemenu(){
+            navLINK.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

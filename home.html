@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                        <!-- make website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;0,700;1,400;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>UNIVERSITY_WEB</title>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+  rel="stylesheet"  type='text/css'>
+</head>
+<body>
+    <section class="sub-header"> 
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="" srcset=""></a>
+            <div class="navlinks" id="navLINK">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="blog.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTENT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()" ></i>
+        </nav>
+        <h1>About us</h1>
+    </section>
+    <!-- ------- about us content ------- -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>WE ARE ONE OF THE WORLD'S LARGEST UNIVERSITY</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam distinctio sit eaque consectetur sint, tenetur, dolorum ex, vero voluptatum libero blanditiis modi vel obcaecati ab rem vitae praesentium! Totam ratione impedit odio numquam sed ipsam, a ipsum ab? Voluptate excepturi, qui doloribus illo nam fugit autem tempore est eos mollitia explicabo, eum ipsam, amet ipsa?</p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="images/about.jpg"  alt="">
+            </div>
+        </div>
+
+    </section>
+    <!-- ------- footer ------- -->
+     <section class="footer">
+         <h4>About Us</h4>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam obcaecati consequatur dicta beatae, amet provident doloribus quasi, <br> praesentium mollitia nam itaque cupiditate, non illo impedit id quis dolores laudantium minima?</p>
+         <div class="icons">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+         </div>
+         <p>made with <i class="fa fa-heart-o" aria-hidden="true"></i> by air tutorials.</p>
+     </section>
+    <!-- ------ java script ----- -->
+    <script>
+        var navLINK=document.getElementById("navLINK")
+        function showmenu(){
+            navLINK.style.right="0";
+        }
+        function hidemenu(){
+            navLINK.style.right="-200px";
+        }
+
+    </script>
+</body>
+</html>

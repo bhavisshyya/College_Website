@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                        <!-- make website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;0,700;1,400;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>UNIVERSITY_WEB</title>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+  rel="stylesheet"  type='text/css'>
+</head>
+<body>
+    <section class="sub-header"> 
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="" srcset=""></a>
+            <div class="navlinks" id="navLINK">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="blog.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTENT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()" ></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+    <!-- ------- Contact ------- -->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/d/embed?mid=1FmpVkVr55ofcwZL2hcjrVfG_9E0&hl=en_US&ehbc=2E312F" width="640" height="480"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <span>
+                        <h5>xyz road,near bhurj khalifa lake</h5>
+                        <p>DUBAI,22910</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <span>
+                        <h5>+1 238288837</h5>
+                        <p>Monday-Friday </p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <span>
+                        <h5>info@dubai@googlee.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="formHandler.php" method="post">
+                    <input type="text" name="name" placeholder="enter your name" required>
+                    <input type="email"name="email" placeholder="enter your email" required>
+                    <input type="text" name="subject" placeholder="enter your subject" required>
+                    <textarea rows="8" name="message" placeholder="message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+            </div>
+       
+    </div>
+    </section>
+    <!-- ------- footer ------- -->
+     <section class="footer">
+         <h4>About Us</h4>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam obcaecati consequatur dicta beatae, amet provident doloribus quasi, <br> praesentium mollitia nam itaque cupiditate, non illo impedit id quis dolores laudantium minima?</p>
+         <div class="icons">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+         </div>
+         <p>made with <i class="fa fa-heart-o" aria-hidden="true"></i> by air tutorials.</p>
+     </section>
+    <!-- ------ java script ----- -->
+    <script>
+        var navLINK=document.getElementById("navLINK")
+        function showmenu(){
+            navLINK.style.right="0";
+        }
+        function hidemenu(){
+            navLINK.style.right="-200px";
+        }
+
+    </script>
+</body>
+</html>
